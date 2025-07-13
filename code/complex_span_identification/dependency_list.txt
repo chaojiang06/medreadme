@@ -1,0 +1,5 @@
+Main entry file: csi_main_no_ds_v2.py
+Dependency file list:
+  /coc/pskynet6/cjiang95/research_18_medical_cwi/src/complex_span_identification/p3_basic_trainer_submit/csi_data_loader.py
+  /coc/pskynet6/cjiang95/research_18_medical_cwi/src/complex_span_identification/p3_basic_trainer_submit/csi_main_no_ds_v2.py
+  /coc/pskynet6/cjiang95/research_18_medical_cwi/src/complex_span_identification/p3_basic_trainer_submit/modeling.py
