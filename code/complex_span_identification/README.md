@@ -17,3 +17,7 @@ conda activate <env_name>
 - csi_data_loader.py
 - csi_main_no_ds_v2.py
 - modeling.py
+
+## Checkpoint
+
+- [Link](https://huggingface.co/chaojiang06/medreadme_medical_complex_span_identification)
