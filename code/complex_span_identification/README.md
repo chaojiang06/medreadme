@@ -20,4 +20,4 @@ conda activate <env_name>
 
 ## Checkpoint
 
-- [Link](https://huggingface.co/chaojiang06/medreadme_medical_complex_span_identification)
+- [Link](https://huggingface.co/chaojiang06/medreadme_medical_complex_span_identification_CWI)
