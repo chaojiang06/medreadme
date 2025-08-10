@@ -18,4 +18,4 @@ conda activate <env_name>
 
 ## Checkpoint
 
-- [Link](https://huggingface.co/chaojiang06/medreadme_medical_sentence_readability_prediction_CWI)
+- [Best readability prediction model trained on our CWI dataset](https://huggingface.co/chaojiang06/medreadme_medical_sentence_readability_prediction_CWI)
