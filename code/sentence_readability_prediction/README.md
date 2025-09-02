@@ -103,4 +103,4 @@ python run_classification.py \
 The code will generate a `predict_results.txt` file in the output folder. You can then calculate the Pearson correlation for each source and average the results across different sources.
 
 # Inference
-If you want to use the code to do inference, the easiest way is to modify the test split of the `readability.csv`, add the sentences you want to predict, and populate with some random readability numbers, then `--do_predict` using the above command.
+If you want to use the code to do large-scale inference, the easiest way is to modify the test split of the `readability.csv`, add the sentences you want to predict, and populate the Readability field with some random numbers, then `--do_predict` using the above command.
