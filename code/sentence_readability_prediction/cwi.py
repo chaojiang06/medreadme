@@ -52,7 +52,7 @@ import sys
 
 def load_raw_data():
 
-    data_df = pd.read_csv("/srv/nlprx-lab/share6/cjiang95/research_18_medical_cwi/20241025_1_github_repo/readability.csv")
+    data_df = pd.read_csv("../../dataset/readability.csv")
     return data_df
 
 
