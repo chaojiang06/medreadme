@@ -2,6 +2,39 @@
 
 Our paper is accepted by EMNLP 2024 main conference as an oral presentation. The paper is available at [arXiv](https://arxiv.org/abs/2405.02144).
 
+## Quickstart on medical sentence readability model
+```python
+# pip install transformers==4.35.2 torch --upgrade
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import torch
+
+MODEL_ID = "chaojiang06/medreadme_medical_sentence_readability_prediction_CWI"
+MAX_LEN  = 512
+
+tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
+model = AutoModelForSequenceClassification.from_pretrained(
+    MODEL_ID,
+    trust_remote_code=True,
+)
+model.eval()
+
+def score_sentences(sentences):
+    enc = tokenizer(
+        sentences,
+        padding=True, truncation=True, max_length=MAX_LEN,
+        return_tensors="pt"
+    )
+    with torch.no_grad():
+        out = model(**enc).logits.squeeze(-1)  # shape: [batch]
+    return out.tolist()
+
+print(score_sentences([
+    "Take one tablet by mouth twice daily after meals.",
+    "The pathophysiological sequelae of dyslipidemia necessitate..."
+]))
+
+```
+
 ## Dataset
 The readability and jargon datasets are in the `dataset` folder.
 
