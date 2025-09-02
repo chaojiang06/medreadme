@@ -100,7 +100,7 @@ python run_classification.py \
     --run_name roberta-large+cwi.py+512+8+1e-5+1-20250901-1 \
     --logging_steps 10
 ```
-The code will generate a `predict_results.txt` file in the output folder. You can then calculate the Pearson correlation for each source and average the results across different sources.
+The code will generate a `predict_results.txt` file in the output folder, containing the predicted readability score for each sentence. You can then calculate the Pearson correlation for each source and average the results across different sources.
 
 # Inference
 If you want to use the code to do large-scale inference, the easiest way is to modify the test split of the `readability.csv`, add the sentences you want to predict, and populate the Readability field with some random numbers, then `--do_predict` using the above command.
