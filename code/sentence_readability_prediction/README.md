@@ -31,17 +31,14 @@ python run_classification.py \
     --run_name roberta-large+cwi.py+512+8+1e-5+1-20250901-1 \
     --logging_steps 10
 ```
-All checkpoints are uploaded to the Hugging Face hub:
+Trained checkpoints are uploaded to the Hugging Face hub:
 
 - [Best medical readability prediction model trained on our dataset.](https://huggingface.co/chaojiang06/medreadme_medical_sentence_readability_prediction_CWI)
-- [Readability prediction model trained on ReadMe++ dataset.](https://huggingface.co/chaojiang06/medreadme_medical_sentence_readability_prediction_CWI)
-- [Readability prediction model trained on CompDS dataset.](https://huggingface.co/chaojiang06/medreadme_medical_sentence_readability_prediction_CWI)
-- [Readability prediction model trained on CEFR-SP dataset.](https://huggingface.co/chaojiang06/medreadme_medical_sentence_readability_prediction_CWI)
 
 # Reproduce
 Please use the following command to reproduce [Table 7 in the paper](https://arxiv.org/pdf/2405.02144.pdf#page=8).
 ```sh
-python /coc/pskynet6/cjiang95/research_18_medical_cwi/src/readability_score/run_classification.py \
+python run_classification.py \
     --model_name_or_path chaojiang06/medreadme_medical_sentence_readability_prediction_CWI \
     --train_dataset_name_custom cwi.py \
     --train_split_name_custom train \
