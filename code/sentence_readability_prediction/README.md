@@ -42,7 +42,7 @@ All checkpoints are uploaded to the Hugging Face hub:
 Please use the following command to reproduce [Table 7 in the paper](https://arxiv.org/pdf/2405.02144.pdf#page=8).
 ```sh
 python /coc/pskynet6/cjiang95/research_18_medical_cwi/src/readability_score/run_classification.py \
-    --model_name_or_path roberta-large \
+    --model_name_or_path chaojiang06/medreadme_medical_sentence_readability_prediction_CWI \
     --train_dataset_name_custom cwi.py \
     --train_split_name_custom train \
     --validation_dataset_name_custom cwi.py \
